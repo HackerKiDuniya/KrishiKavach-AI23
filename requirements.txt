@@ -3,6 +3,7 @@ torch
 torchvision
 pillow
 numpy
+pandas
 opencv-python
 requests
 streamlit-js-eval

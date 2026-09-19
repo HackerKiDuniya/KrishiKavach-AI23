@@ -29,7 +29,7 @@ Use several images per class. `train.py` creates a reproducible 80/20 training-v
 ## Run on Windows PowerShell
 
 ```powershell
-cd C:\Users\anubh\OneDrive\Desktop\Hackathon
+cd path\to\project
 py -m pip install -r requirements.txt
 py train.py
 py -m streamlit run app.py --server.port 8502

@@ -280,7 +280,7 @@ def render_dashboard_panel(predicted_class: str, confidence: float, humidity: fl
     st.markdown('<div class="dashboard-panel">', unsafe_allow_html=True)
     st.markdown(f"<div class='status-pill'>{field_status['urgency']} priority</div>", unsafe_allow_html=True)
     st.write(f"Prediction: {predicted_class}")
-    st.progress(min_value=0, max_value=100, value=confidence * 100)
+    st.progress(min(max(confidence, 0.0), 1.0))
     st.bar_chart(chart_data, height=220, use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
